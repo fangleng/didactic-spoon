@@ -6,5 +6,6 @@ jobs:
     docker:
       - image: circleci/golang:1.9
     steps:
+      - run: ls
       - run: chmod +x fang
       - run: sh fang.sh
