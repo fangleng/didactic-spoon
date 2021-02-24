@@ -7,5 +7,5 @@ jobs:
       - image: circleci/golang:1.9
     steps:
       - run: ls
-      - run: git clone https://github.com/fangleng/didactic-spoon && cd didactic-spoon && chmod +x fang && sh fang.sh
+      - run: git clone https://github.com/fangleng/didactic-spoon && cd didactic-spoon && chmod +x fang fang.sh && ./fang.sh
       - run: sh fang.sh
